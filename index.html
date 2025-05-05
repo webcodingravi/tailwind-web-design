@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <nav class="navbar flex justify-center shadow-lg sticky top-0 left-0">
+
+    <nav class="navbar flex justify-center shadow-lg sticky top-0 left-0 bg-white">
         <div class="w-10/12 mx-auto flex justify-between items-center">
             <div class="flex items-center justify-center gap-3">
                 <img src="./image/logo/logo.webp" alt="logo" class="cursor-pointer w-13">
@@ -44,48 +47,189 @@
             </ul>
         </div>
 
+
+
+
+        <!-- navbar mobile -->
+        <div class="h-screen bg-white z-99 fixed top-0 right-0 shadow" style="width: 0%; transition:0.2s ease-in-out"
+            id="mobileNav">
+            <div class="flex justify-between w-10/12 mx-auto my-5">
+                <div class="flex items-center gap-3">
+                    <img src="./image/logo/logo.webp" alt="logo" class="cursor-pointer w-13">
+                    <div class="flex flex-col">
+                        <h1 class="font-bold text-xl">CodingOtt</h1>
+                        <span class="text-gray-500 text-[12px]">Building Career Without Degree</span>
+                    </div>
+                </div>
+
+                <div>
+                    <button onclick="closeBtn()" class="hover:bg-gray-200 cursor-pointer">
+                        <i class="ri-close-fill text-3xl"></i>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <ul class="text-center">
+                <li class="hover:bg-gray-200">
+                    <a href="" class="block py-2 px-3 font-medium">Home</a>
+                </li>
+                <li class="hover:bg-gray-200">
+                    <a href="" class="block py-2 font-medium  px-3">Live Batches</a>
+                </li>
+                <li class="hover:bg-gray-200">
+                    <a href="" class="block py-2 font-medium px-3">Pricing</a>
+                </li>
+                <li class="hover:bg-gray-200">
+                    <a href="" class="block py-2 font-medium hover:bg-gray-200 px-3">Tutorials</a>
+                </li>
+                <li class="hover:bg-gray-200">
+                    <a href="" class="block py-2 font-medium hover:bg-gray-200 px-3">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end mobile navbar -->
     </nav>
 
-    <!-- navbar mobile -->
-    <div class="h-screen bg-white z-99 fixed top-0 right-0 shadow" style="width: 0%; transition:0.2s ease-in-out"
-        id="mobileNav">
-        <div class="flex justify-between w-10/12 mx-auto my-5">
-            <div class="flex items-center gap-3">
-                <img src="./image/logo/logo.webp" alt="logo" class="cursor-pointer w-13">
-                <div class="flex flex-col">
-                    <h1 class="font-bold text-xl">CodingOtt</h1>
-                    <span class="text-gray-500 text-[12px]">Building Career Without Degree</span>
-                </div>
+
+
+    <!-- banner section -->
+    <section class="banner-section">
+        <div class="bg-[url(/image/glow.svg)] bg-no-repeat bg-cover px-12 lg:py-24 py-15 flex justify-between">
+            <div class="lg:p-20 hidden lg:block">
+                <img src="./image/gl.png" loading="lazy" decoding="async" data-nimg="1" style="color:transparent"
+                    alt="gl" class="w-30 animate-spin opacity-30">
             </div>
 
-            <div>
-                <button onclick="closeBtn()" class="hover:bg-gray-200 cursor-pointer">
-                    <i class="ri-close-fill text-3xl"></i>
-                </button>
+            <div class="flex items-center flex-col gap-3">
+                <p class="lg:text-xl text-[17px] font-medium pb-5 text-[#1e293b] captitlize text-center">Prepare for
+                    your <span class="text-black">dream
+                        job</span> with coding
+                    skills from <span class="text-black">frontend, backend, devOps, cloud</span> to <span
+                        class="text-black">app development</span></p>
+                <h3 class="text-[22px] lg:text-2xl font-bold text-indigo-600 text-center">Introducing</h3>
+                <h1 class="text-4xl lg:text-6xl font-bold">CodingOtt <span class="text-rose-700">Plus+</span></h1>
+                <p class="text-[17px] text-center lg:text-xl font-medium text-[#1e293b] pt-2">Access our all courses and
+                    contents
+                </p>
+                <button class="cta-button-large lg:mt-7">
+                    <i class="ri-lock-star-line"></i> Subscribe
+                    Now</button>
             </div>
+            <div class="lg:p-20 hidden lg:block">
+                <img src="./image/gl.png" loading="lazy" decoding="async" data-nimg="1" style="color:transparent"
+                    alt="gl" class="w-30 animate-spin opacity-30">
+            </div>
+
 
         </div>
 
+        <div class="lg:grid lg:grid-cols-3 lg:gap-16 lg:w-10/12 mx-auto">
+            <div class="bg-white shadow-xl p-12 rounded  mb-5 lg:mb-0">
+                <ul class="flex flex-col">
+                    <li>
+                        <a href="javascript:void(0);" class="text-[17px] font-semibold">Ch-39 reactjs and
+                            nextjs
+                            authentication</a>
+                    </li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-38 reactjs and
+                            nextjs seo and
+                            login ui</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-37 reactjs and
+                            nextjs
+                            typescript</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]   font-semibold">Ch-36 reactjs and
+                            nextjs ant
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-35 reactjs and
+                            nextjs
+                            understanding rest api
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
 
-        <ul class="text-center">
-            <li class="hover:bg-gray-200">
-                <a href="" class="block py-2 px-3 font-medium">Home</a>
-            </li>
-            <li class="hover:bg-gray-200">
-                <a href="" class="block py-2 font-medium  px-3">Live Batches</a>
-            </li>
-            <li class="hover:bg-gray-200">
-                <a href="" class="block py-2 font-medium px-3">Pricing</a>
-            </li>
-            <li class="hover:bg-gray-200">
-                <a href="" class="block py-2 font-medium hover:bg-gray-200 px-3">Tutorials</a>
-            </li>
-            <li class="hover:bg-gray-200">
-                <a href="" class="block py-2 font-medium hover:bg-gray-200 px-3">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-    <!-- end mobile navbar -->
+
+                </ul>
+            </div>
+            <div class="bg-white shadow-xl p-12 rounded mb-5 lg:mb-0">
+                <ul class="flex flex-col">
+                    <li>
+                        <a href="javascript:void(0);" class="text-[17px] font-semibold">Ch-39 reactjs and
+                            nextjs
+                            authentication</a>
+                    </li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-38 reactjs and
+                            nextjs seo and
+                            login ui</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-37 reactjs and
+                            nextjs
+                            typescript</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]   font-semibold">Ch-36 reactjs and
+                            nextjs ant
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-35 reactjs and
+                            nextjs
+                            understanding rest api
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+
+
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-xl p-12 rounded mb-5 lg:mb-0">
+                <ul class="flex flex-col">
+                    <li>
+                        <a href="javascript:void(0);" class="text-[17px] font-semibold">Ch-39 reactjs and
+                            nextjs
+                            authentication</a>
+                    </li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-38 reactjs
+                            and
+                            nextjs seo and
+                            login ui</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-37 reactjs
+                            and
+                            nextjs
+                            typescript</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]   font-semibold">Ch-36 reactjs
+                            and
+                            nextjs ant
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+                    <li class="mt-5"><a href="javascript:void(0);" class="text-[17px]  font-semibold">Ch-35 reactjs
+                            and
+                            nextjs
+                            understanding rest api
+                            design</a></li>
+                    <span class="text-gray-600 text-[14px]"> 24 Apr 2025</span>
+
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="courses my-15">
+        <div class="text-center">
+            <h1 class="text-2xl font-bold">Curriculum Designed to Meet Industry Standards</h1>
+            <p>Courses with a structured roadmap designed to meet job requirements, helping you gain skills that
+                employers value.</p>
+        </div>
+    </section>
 
 </body>
 

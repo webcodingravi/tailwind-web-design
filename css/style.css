@@ -1,0 +1,29 @@
+
+.cta-button-large{
+    background: linear-gradient(90deg, #ff0084 0, #33001b 51%, #ff0084);
+    padding: 17px 38px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #eee;
+    text-align: center;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        background: linear-gradient(90deg, #ff0084 0, #33001b 51%, #ff0084);
+    }
+
+    to {
+        background: linear-gradient(90deg, #c9066e 0, #aa075e 51%, #31011a);
+    }
+}
+
+.cta-button-large:hover{
+    animation:none;
+}
